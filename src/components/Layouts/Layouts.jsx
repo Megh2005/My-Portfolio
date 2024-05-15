@@ -3,6 +3,7 @@ import Home from "../../pages/Home/Home";
 import { FaBars } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import "./Layout.css";
+import Menus from "../Menus/Menus";
 
 const Layouts = () => {
   const [toggle, setToggle] = useState(true);
@@ -15,9 +16,10 @@ const Layouts = () => {
         <div className={toggle ? "sidebar-toggle sidebar" : "sidebar"}>
           <div className="sidebar-toggle-icons">
             <p onClick={handleToggle}>
-              {toggle ? <RxCross2 size={30} /> : <FaBars size={30} />}
+              {toggle ? <FaBars size={30} /> : <RxCross2 size={30} />}
             </p>
           </div>
+          <Menus toggle={toggle} />
         </div>
         <div className="container">
           <Home />

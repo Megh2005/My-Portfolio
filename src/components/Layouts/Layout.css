@@ -4,7 +4,7 @@
 
 .sidebar {
   height: 100vh;
-  width: 90px;
+  width: 250px;
   background: rgb(62, 19, 172);
   background: linear-gradient(
     90deg,
@@ -14,19 +14,20 @@
   );
 }
 
-.sidebar-toggle{
-    width: 250px;
+.sidebar-toggle {
+  width: 90px;
 }
 
 .sidebar-toggle-icons {
   display: flex;
   align-items: right;
-  justify-content: center;
+  justify-content: right;
   cursor: pointer;
+  padding-right: 30px;
 }
 
-.sidebar-toggle-icons p svg{
-    background-color: transparent;
-    color: #fff;
-    margin-top: 30px;
+.sidebar-toggle-icons p svg {
+  background-color: transparent;
+  color: #fff;
+  margin-top: 10px;
 }
